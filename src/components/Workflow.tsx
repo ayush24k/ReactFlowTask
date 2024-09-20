@@ -23,7 +23,7 @@ export default function Workflow() {
     }
 
     return (
-        <div className="flex justify-center pt-[120px] gap-8 container">
+        <div className="flex justify-center py-[120px] gap-8 bg-slate-900 container flex-wrap lg:flex-nowrap">
             <div className="bg-slate-700 p-5 rounded-sm flex flex-col gap-[30px] items-center">
                 <div className="flex flex-col pt-2 gap-2">
                     <div className="flex flex-col gap-2 border-[1px] rounded-sm p-3">
