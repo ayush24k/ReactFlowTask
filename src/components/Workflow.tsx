@@ -1,4 +1,4 @@
-import { addEdge, Background, Connection, Controls, MiniMap, ReactFlow, useEdgesState, useNodesState } from "@xyflow/react";
+import { addEdge, Background, Connection, Controls, ReactFlow, useEdgesState, useNodesState } from "@xyflow/react";
 import { useCallback, useState } from "react";
 import { initialEdges, initialNodes } from "./workflow.constants";
 import '@xyflow/react/dist/style.css';
