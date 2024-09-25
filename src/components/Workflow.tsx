@@ -12,7 +12,7 @@ export default function Workflow() {
     const [edges, setEdges, onEdgeChange] = useEdgesState(initialEdges);
 
     const onConnect = useCallback((connection: Connection) => {
-        const edge = { ...connection, animated: true, id: `${edges.length} + 1`,};
+        const edge = { ...connection, animated: true, id: `${edges.length + 1}`,};
         //@ts-ignore
         setEdges((prevEdges) => addEdge(edge, prevEdges));
     }, [setEdges])
@@ -37,6 +37,12 @@ export default function Workflow() {
                                 type: "nodeComp",
                                 position: {x: cordinates, y:cordinates},
                                 hidden: false
+                            }])
+                            setEdges((prevEdges)=> [...prevEdges, {
+                                id: `${prevEdges.length + 1}`,
+                                source: `${prevEdges.length + 1}`,
+                                target: 'bignode',
+                                animated: true
                             }])
                         }}>Add Node</button>
                     </div>
