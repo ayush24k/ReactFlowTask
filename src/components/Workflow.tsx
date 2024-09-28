@@ -40,7 +40,7 @@ export default function Workflow() {
                             }])
                             setEdges((prevEdges)=> [...prevEdges, {
                                 id: `${prevEdges.length + 1}`,
-                                source: `${prevEdges.length + 1}`,
+                                source: `${nodes.length + 1}`,
                                 target: 'bignode',
                                 animated: true
                             }])

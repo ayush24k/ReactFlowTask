@@ -9,5 +9,12 @@ export const initialNodes: Node[] = [
     //     data: {},
     //     type: "nodeComp",
     //     hidden: true,
-    // },
+    // }, 
+    // {
+    //     id: `bignode`,
+    //     data: {},
+    //     type: "bigNodeComp",
+    //     position: { x: 0, y: 100 },
+    //     hidden: false
+    // }
 ];
